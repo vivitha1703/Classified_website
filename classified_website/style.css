@@ -1,0 +1,471 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDQ0NDQ8NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLi4BCgoKDg0OFw8QFSsZFRktLSstKy0rKy0tKzcrNy0tLSstLSstNy0tLTAtLTctLS0tNzctLS0tLysrLS0rNysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAAAAgMBBAUGB//EACsQAQACAwABBAECBQUAAAAAAAABAgMREgQTITFRQWGRBXGBscEyQnKh8P/EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQf/xAAgEQEAAwEAAgIDAQAAAAAAAAAAAQIREgMhEzEEQVFh/9oADAMBAAIRAxEAPwD5MAPHfSBBogRBoJcQ2F8CEL4vkl/p1cflXFBsUex4pqVOebfpbFDqrCGKHTSGkOa8nrU4hpsZlsCQDSnkTiszOoUtE2tEQ7/G8eKx9z+ZERp2vFY/0vi+Lr3l2R7F2ybL+nNaZtPs8yzZNjYLDbZsuwBhts2waBm2NlEQCbsbYNgN2zYmWbB43bGTJZuDw5bWStkJ1stVFVt7al0Ng8V6PWyUHgJmH5w2BDXM9uAaGQeCXDawtSE6wtQKl2+PPs6+dw4vGl342kOPyepbjdWNza1LpxSqHPdaAICmINSs2nUFrG51D0vHwxSu/wAycRqb25j/AFLD48V39/mVJkXvpKbKY+59yabM2naxOy1cVX6HSHY7Gnyv03tzdjsaOHR0O3P2zsaOHTNx05pu2LjRwvNx2lElmw0cqzcs3RmxbXLVRVW2RObpTYvRauKrbNEp1bsCVINBaUmfx+/s6KYfs4RaYgsKVrM/if2UpSIXpMaVjGbfx+XNhkNhyvdg0HgkHgmkHqtRGq1RAsvin3d2Kzz6S68Nlw5/JDu+YPilHFZWFuWf46Ns2SJdvhYP90/0VHtjaYrGreJg17z8/wBv0dGa+oG9OXNkX9Q5vdp1lrp2sSbI3yJmW8VUtcvSPTOk605X6HSHQ6A5W6HSPTOhp8r9M6R6NT3A5VidrVjRKRoTY2c+zTZO1i2ula41UVUmxJsnNidJaRVSbHpEz8DFjj5lfrXwaZn+Npj+/wDpakRH/vdD1B2es5iZdfcD1HJ2Oz1PDr9VSmT2cHZ6ZfYaU+N8HDYZDYc72INBoJEmgmkKVVrKNVKyDlekunHZyVleknDG0O3HZ11ncPNx2el4cdTENIcvkjPbq8PB3P6Q9XUVhvi4YrX2JnbRGQ829+7J5Mns4st1fIvr2eflyptLfx0NkyozdG19s6Z66opi3Y7R6Z0NPlbsdo9M6Gjlbsdo9KY42BitI26qRpmLFqNyLW0pjad+jzZK9yWuja4061UtYk2TtcnadaRVTZsfyj0pSdA5h1d6LN0Zuzs9Ryv2O3P2ybjT4dPqD1HJ6hLZS048bsnMK5nnzkNGQar4nz0NK2JZumJNBoIaAuJUg9ZSg0SlcL1lalnLFnRgjZwm0OrDXb3f4Zj1G3k4Y+Ht+F8NqQ8/8i3p6eGSeRqNzPxEbNjl538Z8uKxFI+fm3+IazOQ86lJtfIcXleRuZ/VwWybTyZdyTphM69anj5hXodI9DotXyr0Okeh2NHKvQ6R6WwY5vMREbkCYz2pirMzEfb2PG8SKR1f5+vr+bfD8WuONz72+/r+RvJytIjPtxeTyTacr9JZ8rkvkGXI5rWKZaUoe1yTYlrJ2unW0VPNmdJ7GyXisSbpCLN6Glyt0zpLpk3Gjlabp2yI2ulbIWqii9shJuhN2dlrTh0dNi7n7b2NHLzNtLsbNnp4k0JxJthcSeJNEpbNUlxZanu7cEfDjxu7BBQL/TuwvY8SfZ4+KXo4cmobVef5o16ebya4sdr2/EfH3P4h8n5PkzktNp+ZmZlT+J+fOW3Mf6K/H6z9uHpN760/H/H4jZ+5U6Z0l0ybIdfKvTOkuh0Byr0zpLp0eNgm87/AE5EbKnjYZvPt+73fFwxSPb+s/aHjUisRC83a1jHB5bzac/S1sjj8jI3JkceXJsTKfHRl7JWsW10L3RMuqtT2uXpObM2lrypsdJ9DoHivQ6S6E2BcqTdO2TSN830ja41cV/q1sqc3T6ZslbEKdDpPodDB0r0OkejRYDqHNsE23a8cmn2Nk2NjD6UiVKoxKlZKV1l04Y3L0Kezi8aNRv7dMXKGl/bspbSXmeZ7cVn/AJT/AIcmXyPpz9ibJr4veyr0Okuh0TbDzJeizYuyHpTpnRNq4ae+5/YxsLeNh695+P7vVwxrTkxTp00uurl8kzLs6Za+nNOVK+batYx41cuXbmvct8jnyZEzLelDXunNiTYs2Q2iqmxtLpnQVivTdpbTvm+gU+l7X0hfLMo2uXo8TNoUmzJlPobGJ6Ptmy7Zs8T0fY2ntk3GF0ptsWQmw2eF8hJlmyTLNrxzdK9NiUok1ZGHFlolbFG5c9XVijSJdHi9y6otol8qVrk6Rjom0QpMs2TpnR4npTY2n0Ohg7U2yZJ02AOtUo68MOai1b6JeenXFx6rl9Uk5D1Hxuq2Yk5XN2ybFquIWtlTm6c2LNgfqFJszom2TbQwdKbLbJpK2Qk2PET5f4pbInNk5szpUQwnyKTZnSU3Z6h4zm62xNnPN2dHhfIvOQs3S2zZ4mfJKnQ2nsbCelNjae27A6TmREk22JVjDVIPVKqtSa1WxqzdzxfQ7RMOiL5CvQ6S6HQwdq9DpHodDC7W6HSPTYkYO1olSqNZNFimGtbOiLDtDtnqFjT5F+x0h2zsYXyr9DpDtvQwvkV6ZtGcmk7ZT5TPliF7ZPok2Qm5ZuqKsbebV5uS2RCbFmx8sp8qs3LN09jasZzc/Q6JsbGF0fobLsbA02xsu27A02xsmxsDT7bsggHqcSaE4PVUsoUqabE2yJTjWLYeJMSG7I4k2xsuxsH0bY2XbYkDTQeCQ3ZLiVIlvSfTJsMV0pNi9E6ZMjCm55sztPpnR4ibq+oybyltmxhTeVOi9E2yZPETY/TNkmWTJ4ibGmWbLsbPE9G2Nl2ANNsbKANNsbK0DTbGygHpml2NgaYRLNgj0kG2AaIESaAClcN23YBK0AAGDRIAOG7GwCPRtnQBlrJszYATMl2NgHidZtnTAadG2bANMyzbNgBOgAAgAAYbsAANABgAAw0AjDWAG//Z);
+    background-size: cover;
+    padding: 10px;
+    color: #fff;
+    height: 100px;
+  }
+  h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:550px;
+    margin-top: -85px;
+    font-size: 300%;
+    color: black;
+    font-weight: 1000;
+  }
+  img{
+    height: 100px;
+    width: 120px;
+    margin-left: 10px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 1000px;
+  }
+  
+  nav li {
+    float:left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }  
+  nav li a:hover {
+    background-color: #111;
+  }
+
+  .box1 {
+    margin: 10px;
+    margin-left: 40px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box1 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box1 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  }
+
+  .box2 {
+    margin-left: 310px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box2 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box2 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  } 
+  .box3 {
+    margin-left: 580px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box3 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box3 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  } 
+  .box4 {
+    margin-left: 840px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box4 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box4 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  } 
+  .box5 {
+    margin-left: 1100px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box5 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .box5 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  } 
+
+  .box6 {
+    margin-top: 40px;
+    margin-left: 40px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box6 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .box6 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  }
+  .box7 {
+    margin-left: 310px;
+    margin-top: -250px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box7 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box7 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  } 
+
+  .box8 {
+    margin-left: 580px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box8 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box8 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  } 
+
+  .box9 {
+    margin-left: 840px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box9 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box9 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  } 
+
+  .box10 {
+    margin-left: 1100px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box10 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .box10 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  } 
+  .box11 {
+    margin-top: 30px;
+    margin-left: 40px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box11 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box11 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  }
+
+  .box12 {
+    margin-left: 310px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box12 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box12 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  }
+  
+  .box13 {
+    margin-left: 580px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box13 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box13 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  }
+
+  .box14 {
+    margin-left: 840px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box14 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .box14 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  }
+  
+  .box15 {
+    margin-left: 1100px;
+    margin-top: -260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 220px;
+    height: 250px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxvBe3Y37vkNQKBteps7zyn2HovuxA0tCFNzG0ow9_Q&usqp=CAU&ec=48665701);
+  }
+  .box15 p {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: -10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .box15 img {
+    display: block;
+    height: 200px;
+    width: 215px;
+    margin: 0 auto;
+  } 
+
+
+
+  
+  
+

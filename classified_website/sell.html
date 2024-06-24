@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sell products</title>
+    <style>
+      body{
+        background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgIDQgICA0IBwcHCA0HBwcHBw8ICQcNFREWFhURHx8YHSggGBolGxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDw0NDisZFRkrKzcrNy03Ky4tLS03KystKystNysuLSsrLSstKysrKysrLSsrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAACAQADBgUH/8QAFxABAQEBAAAAAAAAAAAAAAAAAAERAv/EABoBAQEBAQEBAQAAAAAAAAAAAAABAgMEBQb/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AP0xmZp9hmVhEVmUZmYEZWQRKqColWpRUo0ho0lSrUo0NSqlRRqLUGolRRo0yKNFZmQVkZhWZk0FZGFVhYH2GZWngRlxREZWBGVgFlZBEVKKlRUGhqValGoNSqlFEaVGo3EqVaNFiIqDSVGqVGmStUFZkbRWZNbRVbR1lMLURgx9xlZp81GXFwBYsYBYmAWXEBEJKKKUqKNDROjRqCNKjRqDUq1KjUGjSo0bg1KtSo0lGqI0ya2oKzalYVmTUFVtRhV1h1gx6HFZsdHymZcYEZWQRlbAFlxgGoSUUEpVEag0KdGjUGjSo0ag0aVGo3BoUqNRuJRq0aNRKi0ajcRK1QVkZNGlTU1hW1k1tFVhYHp2XGdXxkxsVgTFxWAcbFYEQsTEUcQkooJSqUWBRp0ajcCjToUbg0KdGo3AoU6FRuDRpUaNwai0ajUSjVo0bjJa1SorJrINMyawqsKg9XjYrOz4bYzLgiMuNgI2LjYA4hMKFiGNiKNGmNg1Ao06NRuBQp0aNwKFOjUbjnRpUajpAo0qNRuBRpUaNwai0ajUSotEbaoyCtqayIqsjCvYMqvQ+AmMrCIytgIy42IImFiAKUrEGgsGnRqNQKNOjYjUc6NdKFG450K6UKjpHOhXShUdIFCnQqOkCjSo1G4NGlQo3Eo0qNRqIlZBpkaoKuozCvaMrPQ/OsysCKzCIxMAphJgopYYoo0K6UbEagUKdGjcc6Nh0ajcc6HTpQqOkcqNOhUdI50K6UOkdIFCnQqOkCjToUbg0aVFG4lRqg0jVkqKzIwr26sz0vzjKzCMzKCMrCIyoKOJTGoo0adGo1AsCulCjcCuddKFRuBXOulCo6RzoV0rnUdI59BXShUdI50K6UKjpHOjToVHSDRpUaNwai1KjUQaqUaZmYV7hWZ6X5plRQZWYRmZhGSqwooSIojTo0agUKdGo1HOhXShUdI50K6UOkdI5dB06UOkdI51zrp0FR1jnQp0KjpAoU6NR0gUaVGo3Bo0qNGoiVURpmZhXuWZnqfmlVFEZUURmVgRlQESqgo0To1GoFGnQqNQKFdK51HSBXOulCo6Rzrn06UKjrHPpzrpXOo6QKFOhUdIFCnQqOkCjToVHSDUq0aNREVEaRUYV7pUZ635oozMiKrMqMzMIzMyCVKzCjRqsjUCjWZG4FCsyNxzoVmR1jnQqsjpHKhWZHWB051mR0gUKzI6QaFZkdINGsyNREZhpGZhX//Z);
+        background-size: cover;
+        image-orientation: flip;
+        font-size: 20px;
+      }
+      body h1{
+        text-align: center;
+      }
+      form p{
+        font-size: 40px;
+        margin-left: 700px;
+        margin-top: 200px;
+      }
+      div{
+        margin-top: -350px;
+        margin-left: 100px;
+        font-weight:bolder;
+        font-size: 30px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        margin-top:20px;
+      }
+      input[type="number"],
+      input[type="file"], 
+      input[type="text"]{
+        display: block;
+        block-size: 50px; 
+        inline-size: 300px;
+        margin-left: 100px;
+        margin-top:20px;
+        margin-bottom: 10px;
+      }
+      input[type="submit"] {
+        margin-left: 600px;
+        background-color:blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sell Your Products</h1>
+    <form action="submit-form.php" method="POST" enctype="multipart/form-data">
+      <p>For selling the product,choose the correct category and provide correct information.</p>
+      <div class="contents">
+      <label for="category">Product Category</label>
+      <input type="text" placeholder="Select category" style="text-align:center;" list="search-options">
+            <datalist id="search-options">
+             <option value="Automotive">
+             <option value="Books">
+             <option value="Clothes">
+             <option value="Crafts">
+             <option value="Electronics">
+             <option value="Furniture">
+             <option value="Gifts">
+             <option value="Home">
+             <option value="Jewelry">
+             <option value="Musical instruments">
+             <option value="Pets">
+             <option value="Real_estate">
+             <option value="Sports">
+             <option value="Toys">
+             <option value="Vehicles">
+          </datalist>
+
+      <label for="product name">Product name</label>
+      <input type="text"  name="product name" id="name">
+
+      <label for="price">Price</label>
+      <input type="number" name="price" id="price">
+
+      <label for="image">Image</label>
+      <input type="file" name="image" id="image">
+
+      <label for="description">Description</label>
+      <input type="text" name="description" id="description">
+
+      <label for="contact">Contact Information</label>
+      <input type="number" name="contact" id="contact">
+
+      <input type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>

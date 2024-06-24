@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product List</title>
+  <style>
+    body{
+      background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDw8PDysZFRkrLSsrKy0rKy0tKys3Kys3Ny03LTcrLSstNy03LS0rLS0tLSsrKysrKysrKystKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAAAQIDBQQH/8QAHRABAQEBAQACAwAAAAAAAAAAAAERAhIhUTFBYf/EABgBAQEBAQEAAAAAAAAAAAAAAAECAAME/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8A+x6NTprSemk9bGUadPWYwAwAIAGACAAAwIyLCkZFgVMqUpB0mYqlVTSmpJSaUlU1VTTAmpqqiqiaSaaapKamnU0xNAIFLraNZ6evM9+tNPUSnrNq9OVGnGOrlNJ6CoEGYwAzAyMYMIlEWIUCsCIxWBEZUskrFUqU1CauppSlNUmlKairqKqJqU4rE2lKKiqqKuJoBEyXSlOVlKqV58e3WsqpWUqpWLSVURDgZaoiKjKlUCDFRpPQxgjZjIGzERhmSDJhgIyIKpq01hU1NVU0osRSqqkpqKmr6Z1UTU9M6uoq4ipqKqoqompAIh7Z0qVjKvmuD1NZVyspVygtZVSspVShTWVUrOVUrFcNMpsYoEYJmUDMYAZjIBmIAVmIAVmIqZMmxNTV1LJqKitKiqRUVnWtZ1URWdRV9M+lxCKjpdR0qJqQQUHo5XOvpl6VK449MrSVpKxlXKDG0q5WUq5QWkqpWcqpRimkqozlVApZxMOMVmmGCYAYGCMEiMMCIwWIjJmTSVUsio6RWlRSiorPppUdKjnWVZ9NOmfTpEVHSKvpn0qJPySQcbYqVcrGVfNQ6ytpWnNYyrlTi5W0q4y5q5QppFxnFSgtIqIioFLioiVUBijTDYqBAEzKBmMEGYAEzAqZVgVSqpZNTUVpWdLnUVHTSs+lRFZdM+mvTLpcc6z6R0us+lxNSAFpTKvms5VSubrGvNaSsZV80Llbc1rKx36VzUrjaVUrKVcoU1lXKylVKFRrKcrOVUrM0ioiU5UqWC02JggzGAGIIaTAAgGKpoK0opWptO1FZFFZ9LT1VOdZdsumnTPpcRWdZ9NKz6dIipBBSWcqpWcq5UOjSVcrKVcoU1lXKylXKFxtKuVjKqUKlbSrlZSqlSuNZVSs5TlYtZVyspVyhUXp6jT0FehMphlAhrEAtLWB1NotTawFTaLStZNKppptUii1n0qo6MRU9M+lVFXHOorPppWfS4moACksJVSp+JP6JUqaSrlZSqlCo15q5WUqpQqNpVSspVSjFNua0jGfZzoLjf0crKVUow61lXKxlVKFa2lPWUqvQVrTTlZzo9YtNPWenowq0tTS1grU2lpawp2ptFpFFKptOppTRUU9TTEVNZ1dRVxFTWdXSz7VEo8g9B6nI8OqlZyqlYStJVSs5VShcrSVUrOVUoOtJVyspVSsqVrKqVlKqUYqVtKqdMZTnQxWt50qdMZ0c6GKlbzpXpjKc6GK1tOjnTH0c6bFa29H6Zej0YWl6T6TqbWwNNLUaesFWptTpWsKq1Npam04inam0WptKSqaq1FUiwWfCLTpUxNSBhqS5sqpWeqlLm0lVKy05QqVrKqVE/HyNZTWU50ylOUK1tKqVjKc6ZWt5TlYzo/QxUreVXNY8n7Yt/RzphOlToYqVvOj9MPR+mxWt5T9MPR+hh1to1l6HpsLb0nUei9DGrTStR6L0cC9LUaNOJVanRpayQVAMTSqaqlSmxIMmTjk6egLcDlaSZ+QGVBetEoDYVaegNij09ABh+j9ABSp3TnRBiqdH6AZUVOz9ABR+jnQDKP0egMqHo0BiNGgMKNLQAmq/SQGAIApoADCgAMl/9k=);
+      background-size: cover;
+    }
+    header{
+      background-image: url(https://i.pinimg.com/736x/50/8f/3f/508f3f648835f998de51e6362b45f68a.jpg);
+      background-size:1400px 150px;
+      background-repeat: no-repeat;
+      height: 150px;
+    }
+    header h1{
+      padding-top: 30px;
+      color:red;
+      text-align: center;
+    }
+    header p{
+      margin-top: -15px;
+      margin-bottom: 40px;
+      color:black;
+      text-align:center;
+      font-size: 20px;
+    }
+    .product {
+      border: 2px solid black;
+      border-radius: 30px;
+      padding: 10px;
+      width: 205px;
+      height:400px;
+      margin: 10px;
+      float: left;
+      align-items: center;
+    }
+    .product img {
+      width: 80%;
+      height: 70%;
+      margin-left: 30px;
+    }
+    .product h2 {
+      text-align: center;
+      margin-top:0px;
+      margin-bottom:5px;
+      padding: 0;
+      font-size: 1.2em;
+    }
+    .product p {
+      text-align: center;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CRAFTS</h1>
+    <p>Crafts like designing,painting and so on</p>
+  </header>
+  <div class="product">
+    <img src="https://i.ebayimg.com/images/g/BzYAAOSwcjhkYNsN/s-l500.jpg" alt="painting">
+    <h2>Painting</h2>
+    <p>Rs.449<br>Description:Rabbit painting<br>Contact:9846783626</p>
+  </div>
+</body>
+</html>
