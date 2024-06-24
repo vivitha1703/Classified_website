@@ -16,5 +16,3 @@ gifts, home appliances, jewelry, musical instruments, pets, real estate, sports,
 **Languages used**
 * HTML
 * CSS
-* Javascript
-* Python flask
